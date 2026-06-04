@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/trig-site/static/css/main.4d50b592.css",
+    "main.js": "/trig-site/static/js/main.85b4da7c.js",
+    "index.html": "/trig-site/index.html",
+    "main.4d50b592.css.map": "/trig-site/static/css/main.4d50b592.css.map",
+    "main.85b4da7c.js.map": "/trig-site/static/js/main.85b4da7c.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4d50b592.css",
+    "static/js/main.85b4da7c.js"
+  ]
+}
