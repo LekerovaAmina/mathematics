@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import Chapter1 from './components/Chapter1';
 import Chapter2 from './components/Chapter2';
 import Chapter3 from './components/Chapter3';
-import Chapter4 from './components/Chapter4';
+import { Chapter4 } from './components/Chapter4';
 import './App.css';
 
 const CHAPTERS = [
@@ -10,12 +10,11 @@ const CHAPTERS = [
   { id: 2, label: 'Глава 2', title: 'Радианы' },
   { id: 3, label: 'Глава 3', title: 'Графики функций' },
   { id: 4, label: 'Глава 4', title: 'Тождества' },
-
 ];
 
 export default function App() {
   const [sidebarOpen, setSidebarOpen] = useState(false);
-  const [activeChapter, setActiveChapter] = useState(1);
+  const [activeChapter, setActiveChapter] = useState(4);
 
   return (
     <div className="app-root">
