@@ -1,10 +1,13 @@
 import React, { useState } from 'react';
 import Chapter1 from './components/Chapter1';
+import Chapter2 from './components/Chapter2';
+import Chapter3 from './components/Chapter3';
 import './App.css';
 
 const CHAPTERS = [
   { id: 1, label: 'Глава 1', title: 'Тригонометрический круг' },
-  { id: 2, label: 'Глава 2', title: 'Скоро...' },
+  { id: 2, label: 'Глава 2', title: 'Радианы' },
+  { id: 3, label: 'Глава 3', title: 'Графики функций' },
 ];
 
 export default function App() {
@@ -13,7 +16,6 @@ export default function App() {
 
   return (
     <div className="app-root">
-      {/* Sidebar toggle */}
       <button
         className={`sidebar-toggle ${sidebarOpen ? 'open' : ''}`}
         onClick={() => setSidebarOpen(v => !v)}
@@ -22,7 +24,6 @@ export default function App() {
         <span /><span /><span />
       </button>
 
-      {/* Sidebar */}
       <aside className={`sidebar ${sidebarOpen ? 'visible' : ''}`}>
         <div className="sidebar-header">
           <span className="sidebar-logo">∿</span>
@@ -42,19 +43,12 @@ export default function App() {
         </nav>
       </aside>
 
-      {/* Overlay */}
       {sidebarOpen && <div className="sidebar-overlay" onClick={() => setSidebarOpen(false)} />}
 
-      {/* Main content */}
       <main className="main-content">
         {activeChapter === 1 && <Chapter1 />}
-        {activeChapter === 2 && (
-          <div className="coming-soon">
-            <span className="cs-icon">∿</span>
-            <h2>Скоро будет</h2>
-            <p>Эта глава ещё в разработке</p>
-          </div>
-        )}
+        {activeChapter === 2 && <Chapter2 />}
+        {activeChapter === 3 && <Chapter3 />}
       </main>
     </div>
   );
