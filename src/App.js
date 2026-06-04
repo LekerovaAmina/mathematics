@@ -8,6 +8,8 @@ const CHAPTERS = [
   { id: 1, label: 'Глава 1', title: 'Тригонометрический круг' },
   { id: 2, label: 'Глава 2', title: 'Радианы' },
   { id: 3, label: 'Глава 3', title: 'Графики функций' },
+  { id: 4, label: 'Глава 4', title: 'Тождества' },
+
 ];
 
 export default function App() {
@@ -49,6 +51,7 @@ export default function App() {
         {activeChapter === 1 && <Chapter1 />}
         {activeChapter === 2 && <Chapter2 />}
         {activeChapter === 3 && <Chapter3 />}
+        {activeChapter === 4 && <Chapter4 />}
       </main>
     </div>
   );
