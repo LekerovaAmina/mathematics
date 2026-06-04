@@ -1,0 +1,16 @@
+.uc-wrap {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.uc-svg {
+  width: min(90vw - 380px, 90vh);
+  height: min(90vw - 380px, 90vh);
+  max-width: 520px;
+  max-height: 520px;
+  cursor: crosshair;
+  user-select: none;
+}
